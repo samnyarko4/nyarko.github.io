@@ -91,15 +91,11 @@ body #nav{
     background-color: rgba(0, 0, 0, 0.89);
     border-bottom: gray 3px solid;
 }
-
+/* Navigation links color changed to white */
 #nav .nav-link{
     color: white;
 }
 
-nav .nav-link a:hover,
-nav .nav-link a:focus{
-    background-color: white;
-}
 
 /* --------Home Section of site-------*/
 
@@ -139,6 +135,9 @@ padding-bottom: .5em;
     width: auto;
     border: 1px solid black;
 }
+#contact .contact-form-input{
+    border: black 1px solid;
+}
 /* Styling the button for a better look */
 button{
     background-color: white;
@@ -165,9 +164,9 @@ footer{
 /* -------------------------
          Desktop Style 
 ----------------------------*/
-
-@media screen and (min-width: 850px){
-#main #about{
-    padding-bottom: 6em;
-}
-}
+/* Media query to push contact page downwards for desktop */
+@media screen and (min-width: 1015px){
+     #main #about p{
+         padding-top: 3em;
+     }
+     }

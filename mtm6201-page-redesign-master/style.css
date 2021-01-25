@@ -1,0 +1,173 @@
+/* Css Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------------
+                  Custom Styles
+----------------------------------------------*/
+/* Fixing width of the nav to be dynamic*/
+body #nav{
+    width: auto;
+    max-width: 1200px;
+    border: none;
+}
+
+/* creating a consistant background color */
+#main .home,
+#main .about,
+#main .contact,
+#contact .contact-form{
+    background-color: white;
+}
+
+/* All section headers to allign to the left and have uniform look*/
+#main .page-title,
+#main .section-title{
+    text-align: left;
+    padding-bottom: .5px;
+    border-bottom: black 2px solid;
+    color: black;
+}
+
+/* Remove padding form Home Section to have consistancy throughout the page */
+#main #home{
+    padding: 0em;
+}
+
+
+/* ---------------
+    Mobile Syles
+----------------*/
+
+/* ----------Navigation-------------*/
+
+/* Change background color */
+body #nav{
+    background-color: rgba(0, 0, 0, 0.89);
+    border-bottom: gray 3px solid;
+}
+
+#nav .nav-link{
+    color: white;
+}
+
+nav .nav-link a:hover,
+nav .nav-link a:focus{
+    background-color: white;
+}
+
+/* --------Home Section of site-------*/
+
+#main #home{
+    /* Font switched to a more professional font */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    padding-top: 1em;
+}
+#main #home p{
+    padding-top: 1em;
+}
+
+
+/* ---------About Section of the site ----------*/
+#main #about{
+color: black;
+font-size: 20px;
+}
+#main #about p{
+    padding-top: 1em;
+}
+
+/* -----------Contact Section of site--------- */
+#main #contact{
+    padding-top:.5em;
+}
+#main #contact p{
+    font-size: 20px;
+    padding-top: 1em;
+padding-bottom: .5em;
+}
+/* Border around the contact form to seperate it from other sections on the site */
+#contact .contact-form{
+    width: auto;
+    border: 1px solid black;
+}
+/* Styling the button for a better look */
+button{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+button:hover,
+button:focus{
+    background-color: black;
+    color: white;
+}
+
+/*----------- Footer Section of site -----------*/
+footer{
+    background-color:rgba(0, 0, 0, 0.89) ;
+    color: white;
+}
+
+
+/* -------------------------
+         Desktop Style 
+----------------------------*/
+
+@media screen and (min-width: 850px){
+#main #about{
+    padding-bottom: 6em;
+}
+}

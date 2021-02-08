@@ -53,6 +53,13 @@ table {
 html{
     background-color: #f7f7ff ;
 }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
 /* Button style change */
 .submit{
     background-color: #57eeab;
@@ -65,12 +72,146 @@ html{
     color: white;
     border: none;
     border-radius: 5px;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 }
+
 /* Changing color of footer */
 footer{
     background-color: #fffd8c;
 }
+
 /* form styles */
 .hour-form{
     display: inline block;
+}
+
+/* ------------------------------
+         Mobile Styles
+---------------------------------*/
+
+/* Change logo size to fit on mobile */
+.logo{
+    width: 20%;
+}
+
+/* Changing the fonts for the introduction */
+.introduction h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
+    padding-bottom: 20px;
+}
+.introduction p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+/* -----Styling the sign up form -----*/
+.apply{
+    background-color: white;
+    border-radius: 5px;;
+    margin-top: 20px;
+    box-shadow: 5px 10px  5px grey;
+}
+ .apply h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 10px;
+ }
+ /* Removing desktop apply text for mobile */
+.form-container{
+    max-width: 1200px;
+    padding: 1.5em;
+}
+
+ .desktop-apply{
+     display: none;
+ }
+.mobile-apply{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.apply-form input{
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    width: 100%;
+    margin: .5em;
+}
+input::placeholder{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.submit{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.agreement p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+.pr{
+    color: #ff8480;
+}
+
+/* --------Footer of site------- */
+.footer-container{
+    margin: 0 auto;
+    padding: 0em 3em 0em 3em ;
+    padding-top: 1em;
+}
+.site-footer h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+.site-footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+/* Footer form */
+.hour-form{
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "hours" "city"
+        "submit-hours";
+}
+.hour-form input{
+     background-color: #f7f7f7;
+    border: none;
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    margin: .5em;
+}
+.hours input{
+    width: 50%;
+}
+.city input{
+    width: 100%;
+}
+.submit-hours{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.socials img{
+    display: inline-block;
+    margin:1em;
+    padding-right: 3em;
 }

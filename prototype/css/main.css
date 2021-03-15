@@ -241,3 +241,42 @@ img{
 .shop-accessories img{
 	margin-top: 1em;
 }
+
+
+
+
+
+/* Desktop and Tablet */
+@media screen and (min-width: 800px){
+	.slideshow{
+		display: none;
+	}
+	.mobile-buttons{
+		display: none;
+	}
+	
+	.collection{
+		display: flex;
+		border: #e4b05c;
+		border-style: solid;
+		border-width: 10px;
+		margin-bottom: 2em;
+	}
+
+	.nike img{
+		height: 20em;
+		width: 70em;
+	}
+
+	.adidas img{
+		height: 10em;
+		width: 90em;
+	}
+
+	.vlone img{
+
+		height: 10em;
+		padding-top: 10em;
+		padding-right: 20em;
+	}
+}

@@ -4,45 +4,66 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    
     <title>Bootstrap</title>
-
-    <!-- Navigation -->
-        <nav class="navbar
-                    navbar-expand-md
-                    bg-dark
-                    navbar-dark
-                    fixed-top">
-        <a href="index.html" class="navbar-brand">Bootstrap</a>
-        <!-- Navbar collapse icon for mobile -->
-        <button class="navbar-toggler"
-                data-toggle="collapse"
-                data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation buttons -->
-        <div id="navbarNav" class="collapse navbar-collapse">
-            <div class="ml-auto navbar-nav">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="#" class="nav-link">About</a>
-            </div>
-        </div>
-        </nav>
-  </head>
-  <body>
-     <!-- Page Heading -->
-     <div class="container-md">
-       <h1 class="display-1 mt-5  ">Everything Bootstrap!</h1>
-       <!-- Cards -->
-       <!-- About bootstrap card -->
-       <div class="row 
-                   border-bottom 
-                   border-4 
-                   border-dark">
-         <div class="col-sm">
+    
+    <!---------- 
+      Navigation 
+   ------------->
+    <nav class="navbar
+    navbar-expand-md
+    bg-dark
+    navbar-dark
+    fixed-top">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand">Bootstrap</a>
+      <!-- Navbar collapse icon for mobile -->
+      <button class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navigation buttons -->
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <div class="ml-auto navbar-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#beta" class="nav-link">Beta</a>
+        <div class="ml-auto
+        .text-nowrap
+        btn.sm
+        ">
+        <a href="https://getbootstrap.com/docs/5.0/getting-started/download/" class="btn btn-dark btn-outline-light btn-sm ">Download Bootstrap</a>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+</head>
+<body>
+  <!-------------------------------------
+               Site Content 
+  -------------------------------------->
+  <!-- Page Heading -->
+  <div class="card bg-dark text-white mb-4">
+    <img src="images/home-wallpaper.png" class="card-img image-fluid " alt="landing-image">
+    <div class="card-img-overlay text-center mt-5">
+      <h1 class="card-text">Everthing Boostrap!</h1>
+      <p class="card-text Display-6">Everything you need to know about bootstrap in mutes.</p>
+    </div>
+  </div>
+  <!-- Cards -->
+  <!-- About bootstrap card -->
+  <div class="container">
+              <div class="row 
+              border-bottom 
+              border-4 
+              border-dark">
+              <div class="col-sm">
            <div class="card 
                        text-white 
                        bg-dark 
@@ -52,7 +73,7 @@
             <div class="card-body">
               <h5 class="card-title">About Bootstrap </h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-light">More About Boostrap</a>
+              <a href="https://getbootstrap.com/docs/4.6/about/overview/" class="btn btn-light">More About Boostrap</a>
             </div>
           </div>
         </div>
@@ -67,7 +88,7 @@
             <div class="card-body">
               <h5 class="card-title">Boostrap Features</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-light">More Features</a>
+              <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" class="btn btn-light">More Features</a>
             </div>
           </div>
         </div>
@@ -82,21 +103,90 @@
             <div class="card-body">
               <h5 class="card-title">Boostrap 5 Beta 3</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-light">What's New</a>
+              <a href="https://blog.getbootstrap.com" class="btn btn-light">What's New</a>
             </div>
           </div>
         </div>
       </div>
       
-      <!-- About Bootstrap Section -->
+      <!------------------------
+         About Bootstrap Section 
+      -------------------------->
       <h2 class="
-                  text-decoration-underline
-                  text-center
-                  mt-sm-4"> About Bootstrap</h2>
-      <img src="images/logo.png" class="img-fluid
-                                         width: 100%
-                                         height: 50%" alt="logo">
-    </div>
+      text-decoration-underline
+      text-center
+      mt-sm-4"> About Bootstrap</h2>
+      <div id="about" class="clearfix container mb-5 pb-md-5 border-bottom border-4 border-dark">
+        <img src="images/logo-small.png" class=" img-fluid
+                                           float-start
+                                           me-md-4
+                                           " alt="logo">
+          <p class="display-6">Bootstrap is an open-source, responsive, front-end framework. Bootstrap quickly designs and customizes mobile first websites. It’s hosted on GithHub and originally created by and for twitter. It is built on Sass and jQuery and includes a responsive grid system, a modern cross-browser theme and an extensive prebuilt components library. </p>
+      </div>
+      <!-- ----------------------
+        Bootstrap Features section 
+      ---------------------------->
+      <div id="features" class="row shadow p-5 mb-5 bg-body rounded ">
+        <!-- Responsive feature card -->
+        <div class="card mt-6 pt-3 col-sm" style="width: 18rem;">
+          <img src="images/responsive.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Another amazing feature that Bootstrap offers is its responsive utility classes. Using responsive utility classes allows a particular piece of content to appear or hide only on devices depending on the size of the screen being used. This feature is extremely helpful for those who create websites mobile first.</p>
+          </div>
+        </div>
+        <!-- Component features Card -->
+        <div class="card col-md" style="width: 18rem;">
+          <img src="images/components.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: auto;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Dropdowns</li>
+              <li class="list-group-item">Navigation</li>
+              <li class="list-group-item">Typography</li>
+              <li class="list-group-item ">Thumbnails</li>
+              <li class="list-group-item">Alerts</li>
+              <a href="https://getbootstrap.com/2.3.2/components.html" class="btn btn-outline-dark">More Components</a>
+            </ul>
+          </div>
+        </div>
+        <!-- Force next set of cards to be on a new line -->
+        <div class="w-100"></div>
+        <!-- HTML Features Card -->
+        <div class="card mt-6 pt-3 col-sm" style="width: auto;">
+          <img src="images/html.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Bootstrap makes it easy and comes with premade styling for most html elements. Some elements with premade styling are; tables, forms, buttons, and images.</p>
+          </div>
+        </div>
+        <!-- Browesers feature card -->
+        <div class="card mt-6 pt-3 col-sm" style="width: auto;">
+          <img src="images/Browsers.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text display-6">Bootstrap allows you to build websites that are compatible with all modern browsers.</p>
+            <div class="card" style="width: auto;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Google Chrom</li>
+                <li class="list-group-item">Safari</li>
+                <li class="list-group-item">Omega</li>
+                <li class="list-group-item ">Internet Explorer</li>
+                <li class="list-group-item">Mozilla Firefox</li>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!------------------------
+            Beta portion of the site
+          ------------------------->
+          <div id="beta" class="mb-4">
+            <a href="https://blog.getbootstrap.com" class="display-5 ">Click here to get the latest news on bootstrap</a>
+          </div>
+          </div>
+
+            <!------
+              Footer
+             ------->
+            <footer class="bg-secondary">
+              <p class="display-">&copy; Bootstrap</p>
+            </footer>
       <!-- Optional JavaScript; choose one of the two! -->
       
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -107,11 +197,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
+    <!-- SASS -->
+    
 
-
-    <!-------------------------------------
-                 Site Content 
-    -------------------------------------->
    
 
   </body>

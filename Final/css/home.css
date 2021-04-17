@@ -72,7 +72,7 @@ table {
 
     .logo{
         color: black;
-        background-color: white;
+        background-color: #00b490;
         padding: 2px 2px 2px 2px;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -86,7 +86,7 @@ table {
     }
 
     .nav-links a{
-        color: white;
+        color: #00b490;
         text-decoration: none;
         letter-spacing: 2px;
         font-weight: bold;
@@ -94,7 +94,6 @@ table {
 
     .menu-toggle{
         position: absolute;
-       top: 2em;
         right: 5rem;
         display: none;
         flex-direction: column; 
@@ -106,7 +105,7 @@ table {
     .menu-toggle .line{
         height: 3px;
         width: 100%;
-        background-color: white;
+        background-color: #00b490;
         border-radius: 10px;
     }
 
@@ -115,16 +114,49 @@ table {
         margin: 0 auto;
         padding: 1em;
     }
+    /* Welcome Portion */
+
+    .welcome{
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 5em;
+        
+    }
+    .sitename{
+        font-weight: bold;
+    }
+    .welcome h1,
+    .welcome-button{
+        padding-top: 5em;
+    }
+
+    button{
+        width: 60%;
+        height: 3em;
+        color: white;
+        background: none;
+        border:1px solid #00b490;
+    }
+    button a :hover{
+        background-color: #00b490;
+    }
+
+
 /* Card 1  */
     .card{
         display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 200px 200px 80px;
-        grid-template-areas: "image" "text" "stats";
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 80px;
+        grid-template-areas: "image" "text" "button";
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
         border-radius: 18px;
-        background: white;
-        box-shadow: 5px, 5px, 15px rgba(0, 0, 0, 0.9);
+        background: #00b490;
+        margin-bottom: 2em;
+        box-shadow: 5px 10px  5px grey;
         text-align: center;
+        
     }
 
     .card-image{
@@ -137,57 +169,229 @@ table {
 
     .card-text{
         grid-area: text;
+        margin: 25px;
+        
     }
-    /* Card 2 */
-    .card3{
+
+    .card-text h2{
+        padding-bottom: 1em;
+        font-size: 25px;
+    }
+
+    .card-text p{
+        padding-bottom: 1em;
+    }
+
+    .card-button{
+        grid-area: button;
         display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 200px 200px 80px;
-        grid-template-areas: "image" "text" "stats";
-        border-radius: 18px;
-        background: white;
-        box-shadow: 5px, 5px, 15px rgba(0, 0, 0, 0.9);
-        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 1px solid black;
+        color: black;
+        width: 20em;   
+        
+    }
+    .card-button a{
+        text-decoration: none;
+        font-size: 30px;
+        
     }
 
-    .card3-image{
-        grid-area: image;
+    .card-button :visited{
+        color: black;
     }
-
-    .card3-text{
-        grid-area: text;
+    .card-button :hover{
+        background: black;
+        color: #00b490;
     }
-    /* Card 3 */
+    
+   
+    /* Card 2 */
     .card2{
         display: grid;
-        grid-template-columns: 300px;
+        grid-template-columns: auto;
         grid-template-rows: 200px 200px 80px;
         grid-template-areas: "image" "text" "stats";
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
         border-radius: 18px;
-        background: white;
-        box-shadow: 5px, 5px, 15px rgba(0, 0, 0, 0.9);
+        background: #00b490;
+        margin-bottom: 2em;
+        box-shadow: 5px 10px  5px grey;;
         text-align: center;
-        
     }
 
     .card2-image{
         grid-area: image;
+        background: url(/images/graphicdessign.jpeg);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-size: cover;
     }
 
     .card2-text{
         grid-area: text;
+        margin: 25px;
     }
 
-    .site-cards{
+    .card2-text h2{
+        padding-bottom: 1em;
+        font-size: 25px;
+    }
+
+    .card2-text p{
+        padding-bottom: 2em;
+    }
+
+    .card2-button{
+        grid-area: button;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
-        margin-left: 5em;
-        margin-right: 5em;
-        background-image: url(../images/bg2.png);
-        background-repeat: no-repeat;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 1px solid black;
+        color: black;
+        width: 20em;   
+        
+    }
+    .card2-button a{
+        text-decoration: none;
+        font-size: 30px;
+        
+    }
+
+    .card2-button :visited{
+        color: black;
+    }
+    .card2-button :hover{
+        background: black;
+        color: #00b490;
+    }
+
+    /* Card 3 */
+    .card3{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 200px 200px 80px;
+        grid-template-areas: "image" "text" "stats";
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        border-radius: 18px;
+        background: #00b490;
+        box-shadow: 5px 10px 5px grey;
+        text-align: center;
+        
+    }
+
+    .card3-image{
+        grid-area: image;
+        background: url(/images/ux.png);
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
         background-size: cover;
     }
+
+    .card3-text{
+        grid-area: text;
+        margin: 25px;
+    }
+
+    .card3-text h2{
+        padding-bottom: 1em;
+        font-size: 25px;
+    }
+
+    .card3-button{
+        grid-area: button;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: 1px solid black;
+        color: black;
+        width: 20em;   
+        
+    }
+    .card-3text h2{
+        padding-bottom: 1em;
+        font-size: 25px;
+    }
+
+    .card3-text p{
+        padding-bottom: 1.5em;
+    }
+    .card3-button a{
+        text-decoration: none;
+        font-size: 30px;
+        
+    }
+
+    .card3-button :visited{
+        color: black;
+    }
+    .card3-button :hover{
+        background: black;
+        color: #00b490;
+    }
+
+    /* Footer Section */
+        footer{
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 50px 100px;
+            background-color: #00b490;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        footer .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        footer .container .aboutus{
+            width: 40%;
+            margin-right: 1.5em;
+        }   
+
+        footer .container h3{
+            position: relative;
+            color: black;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        
+        }
+
+        .footer-menu{
+            position: relative;
+            width: 25%;
+            margin-right: 1.5em;
+        }
+
+        .footer-menu ul li{
+            list-style: none;
+        }
+
+        .footer-menu ul li a{
+            color: black;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .footer-menu ul li a:hover{
+            color: grey;
+        }
+
     
     @media screen and (max-width: 1000px){
        .menu-toggle{
@@ -214,4 +418,27 @@ table {
        .logo{
            margin-left: 5em;
        }
+
+            /* Cards */
+            .card-container{
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 3em;
+            }
+
+    }
+    @media screen and (min-width: 1000px){
+  
+
+       .site-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 10px;
+        margin-left: 5em;
+        margin-right: em;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+       
     }

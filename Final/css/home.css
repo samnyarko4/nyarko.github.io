@@ -435,7 +435,7 @@ table {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 10px;
         margin-left: 5em;
-        margin-right: em;
+        margin-right: 1em;
         background-repeat: no-repeat;
         background-size: cover;
        }
